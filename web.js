@@ -6,9 +6,9 @@ app.get('/', function(request, response) {
   var fs = require('fs');
   var buffer = new Buffer(256);
 
-  var data = fs.readFileSync('index.html');
-  var b = buffer.toString(data);
-  var res = buffer.write(b);
+  var data = fs.readFileSync('index.html',encoding);
+  var d = buffer.write(data);
+  var res = buffer.toString(d);
   response(res);
 });
 
