@@ -3,10 +3,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <title>My First Bitstarter</title>
     <link type="text/css" rel="stylesheet" 
           href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
     <style type="text/css">
+      @media (min-width: 980px) {
       body {
         padding-top: 20px;
         padding-bottom: 40px;
@@ -28,6 +32,13 @@
         /* Internal borders have 1px width, thus need to add 4 x 1px to 120px. */
         height: 124px;
         line-height: 124px;
+      }
+      }
+      
+      @media (max-width: 480px) {
+        .body {
+          padding: 2.5% 10%;
+        }
       }
       .thermometer, .order, .social {
         /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
