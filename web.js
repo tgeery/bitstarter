@@ -7,10 +7,11 @@ app.get('/', function(request, response) {
   var buffer = new Buffer(256);
 
   var data = fs.readFileSync('index.html', 'utf8');
-  response.send(data);
+  var data2 = fs.readFileSync('eventplannerlogo.png','utf8');
+  response.send(data2);
 });
 
-var port = process.env.PORT || 5000;
+var port = process.env.PORT || 8080;
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
